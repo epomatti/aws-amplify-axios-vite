@@ -11,6 +11,12 @@ yarn dev
 
 ### AWS
 
+#### Using the Console
+
+You can easily create a Hosting using the web console.
+
+#### Using the CLI
+
 If you're using GitHub App, don't forget to give permissions
 
 > Using [GitHub App tokens](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#setting-up-github-app-cloudformation) should be preferred.
