@@ -1,30 +1,16 @@
-<script setup lang="ts">
-
-</script>
-
-<template>
-
-  <div class="card">
-    <button type="button" @click="getProducts">Call API</button>
-  </div>
-</template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
-
-<script lang="ts">
-import axios from "axios";
+import axios, {
+  AxiosError,
+  InternalAxiosRequestConfig,
+  AxiosResponse,
+} from "axios";
 
 export const instance = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
-export async function getProducts() {
+export async function get() {
   try {
-    const { data, status } = await instance.get(
+    const { data, status } = await axios.get(
       '/products/1',
       {
         headers: {
@@ -48,5 +34,3 @@ export async function getProducts() {
     }
   }
 }
-
-</script>
