@@ -31,6 +31,19 @@ You can easily create a Hosting using the web console.
 
 #### Terraform
 
+Copy the template and add the required variables:
+
+```sh
+cp terraform/config/dev.auto.tfvars terraform/
+```
+
+Create the app:
+
+```sh
+terraform init
+terraform -chdir="terraform" apply -auto-approve
+```
+
 #### CLI
 
 If you're using GitHub App, don't forget to give permissions
