@@ -17,6 +17,10 @@ To use GitHub Apps, first make sure you've granted permissions to the specific r
 https://github.com/apps/aws-amplify-us-east-2
 ```
 
+The token permissions required are defined as follows:
+
+> Select scopes section, select admin:repo_hook
+
 You can check the [documentation](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html) for additional information.
 
 > You can use AWS CloudFormation, the Amplify CLI, and the SDKs to deploy a new Amplify app that uses the GitHub App for repo access. This process requires that you first install the Amplify GitHub App in your GitHub account. Next, you will need to generate a personal access token in your GitHub account. Lastly, deploy the app and specify the personal access token.
